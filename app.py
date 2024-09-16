@@ -38,5 +38,5 @@ if st.button('Show Recommendation'):
     cols = st.columns(5)  # Create a list of 5 columns
     for i in range(5):
         with cols[i]:  # Use the column corresponding to the index
-            st.text(recommended_movie_names[i])
             st.image(recommended_movie_posters[i])
+            st.markdown(f"<h5 style='text-align: center;'>{recommended_movie_names[i]}</h5>", unsafe_allow_html=True)
